@@ -8,7 +8,7 @@ Built in Python with Pygame library and hosted on the browser with pygbag
 
 [Play the game here](https://luistallavo.github.io/Tetris/)
 
-<img width="1315" height="982" alt="image" src="https://github.com/user-attachments/assets/d3197241-527c-4a0f-bef5-a64168cb927b" />
+<img width="1300" height="974" alt="image" src="https://github.com/user-attachments/assets/a327d987-6010-4e05-b3b4-fce72c7c5d1d" />
 
 ## Controls
 
@@ -24,6 +24,7 @@ Built in Python with Pygame library and hosted on the browser with pygbag
 - Python
 - Pygame
 - Pygbag (WebAssembly compilation for browser)
+
 
 
 
