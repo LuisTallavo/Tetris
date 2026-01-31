@@ -1,24 +1,12 @@
-# Tetris
+# Old School Tetris!
 
-A classic Tetris game built with Python and Pygame, playable in the browser.
+I made this game as a kid when participating in @RealProgramming4Kids camp. Decided to host it here for memories.
+
+Built in Python with Pygame library and hosted on the browser with pygbag
 
 ## Play Online
 
 [Play the game here](https://luistallavo.github.io/Tetris/)
-
-## Run Locally
-
-**In Browser:**
-```bash
-pip install pygbag
-python run_browser.py
-```
-
-**Desktop:**
-```bash
-pip install pygame
-python main.py
-```
 
 ## Controls
 
@@ -31,9 +19,8 @@ python main.py
 - **S** - Swap piece
 
 ## Tech Stack
-
 - Python
 - Pygame
 - Pygbag (WebAssembly compilation for browser)
-- GitHub Actions (automated deployment)
+
 
