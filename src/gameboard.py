@@ -7,7 +7,10 @@ activeBoardColour = [[0 for y in range(gameboardheight)] for x in range(gameboar
 BLACK = (0,0,0)
 
 pygame.init()
-linesound = pygame.mixer.Sound("assets/clearline.wav")
+try:
+    linesound = pygame.mixer.Sound("assets/clearline.wav")
+except:
+    linesound = None
 
 class Gameboard():
     def __init__(self,colour,blocksize):
@@ -49,7 +52,8 @@ class Gameboard():
     def clearFullRows(self):
         for j in range(gameboardheight):
             if self.isCompleteLine(j):
-                linesound.play()
+                if linesound:
+                    linesound.play()
                 self.score += 100
                 self.numlines += 1
                 self.templeveltracker += 1

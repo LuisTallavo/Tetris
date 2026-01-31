@@ -29,6 +29,8 @@ shape = None
 nextshape = None
 gameboard = None
 event = None
+slowtime_image = None
+swap_image = None
 
 def load_highscores():
     global namelist, scorelist
@@ -92,11 +94,9 @@ def drawscreen():
     screen.blit(poweruptext, (50,525))
     numslowtimetext = myfont.render(" x" + str(gameboard.numslowtime), 1, WHITE)
     screen.blit(numslowtimetext, (310, 525))
-    slowtime_image = pygame.image.load("assets/clock.png")
     screen.blit(slowtime_image, (250, 515))
     numswaptext = myfont.render(" x" + str(gameboard.numswap), 1, WHITE)
     screen.blit(numswaptext, (435, 525))
-    swap_image = pygame.image.load("assets/swap.png")
     screen.blit(swap_image, (375,515))
     for i in range(5):
         hsnametext = HSfont.render(str(namelist[i]),1, WHITE)
@@ -179,6 +179,7 @@ def resetHighScores():
 async def main():
     global screen, myfont, HSfont, done, started, game_ended, delay, name, slowtimedelay
     global namelist, scorelist, titlescreen, shape, nextshape, gameboard, event
+    global slowtime_image, swap_image
 
     pygame.init()
     pygame.mixer.init()
@@ -198,6 +199,8 @@ async def main():
 
     titlescreen = pygame.image.load("assets/Backdrop.png")
     titlescreen = pygame.transform.scale(titlescreen, (950, 750))
+    slowtime_image = pygame.image.load("assets/clock.png")
+    swap_image = pygame.image.load("assets/swap.png")
 
     shape = Shape()
     nextshape = Shape()
