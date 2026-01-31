@@ -16,7 +16,6 @@ def main():
 
     print(f"Starting Tetris server on port {port}...")
     print(f"Project directory: {project_dir}")
-    print()
 
     # Start pygbag server
     try:
@@ -38,14 +37,9 @@ def main():
     print(f"Opening {url} in your browser...")
     webbrowser.open(url)
 
-    print()
-    print("=" * 50)
     print("Game is running! Press Ctrl+C to stop the server.")
-    print("=" * 50)
-    print()
 
     try:
-        # Keep running until Ctrl+C
         process.wait()
     except KeyboardInterrupt:
         print("\nShutting down server...")
