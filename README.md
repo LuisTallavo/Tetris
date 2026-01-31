@@ -4,7 +4,7 @@ A classic Tetris game built with Python and Pygame, playable in the browser.
 
 ## Play Online
 
-[Play the game here]([https://ltallavo.github.io/Tetris/](https://luistallavo.github.io/Tetris/))
+[Play the game here](https://luistallavo.github.io/Tetris/)
 
 ## Run Locally
 
